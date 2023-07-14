@@ -5,7 +5,6 @@ from selenium.webdriver.chrome.options import Options
 
 url = 'https://id.teamcal.ai/id/go/qaintern#'
 
-
 @pytest.fixture()
 def driver():
     options = Options()
@@ -16,4 +15,5 @@ def driver():
 
     yield browser
     browser.quit()
+
 
